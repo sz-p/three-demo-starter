@@ -1,13 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
-import styles from "./showearth.scss";
-import showEarthHandle from "./showearthhandle/showearthhandle";
+import styles from "./showdemo.scss";
+import showDemoHandle from "./demoHandle/showdemohandle";
 
 
-function ShowEarth(props) {
+function ShowDemo(props) {
   const container = useRef();
 
   useEffect(() => {
-    const earth = new showEarthHandle(container.current);
+    const earth = new showDemoHandle(container.current);
     earth.show();
     return () => {
       earth.end();
@@ -21,4 +21,4 @@ function ShowEarth(props) {
     </div>
   );
 }
-export default ShowEarth;
+export default ShowDemo;

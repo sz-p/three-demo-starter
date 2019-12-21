@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import styles from "./index.scss";
-import { Link } from 'react-router-dom';
-import ShowEarth from '../../components/earth/showearth';
+import ShowDemo from '../../components/demo/showdemo';
 
 function IndexPage() {
   // const [count, setCount] = useState(0);
   return (
     <div className={styles.page}>
-      <ShowEarth />
+      <ShowDemo />
     </div>
   );
 }
