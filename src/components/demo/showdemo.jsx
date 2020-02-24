@@ -7,10 +7,10 @@ function ShowDemo(props) {
   const container = useRef();
 
   useEffect(() => {
-    const earth = new showDemoHandle(container.current);
-    earth.show();
+    const demo = new showDemoHandle(container.current);
+    demo.show();
     return () => {
-      earth.end();
+      demo.end();
     };
   }, []);
 
