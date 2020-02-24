@@ -5,6 +5,7 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
+    "resolveJsonModule": true,
     "moduleResolution": "node",
     "lib": [
       "es6",
